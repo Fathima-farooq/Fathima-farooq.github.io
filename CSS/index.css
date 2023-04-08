@@ -1,0 +1,78 @@
+
+.nav-item:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  border-bottom: 1px solid black;
+  transition: 0.4s;
+}
+
+.nav-item:hover:after {
+  width: 100%;
+}
+
+.nav-link:hover {
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+
+/* CSS for index */
+.number {
+  font-size: 4rem;
+  font-weight: bold;
+}
+.number::after {
+  content: ""; /* This is necessary for the pseudo element to work. */
+  display: block; /* This will put the pseudo element on its own line. */
+  margin: 0 auto; /* This will center the border. */
+  width: 2.5rem; /* Change this to whatever width you want. */
+  /* padding-top: 5px; This creates some space between the element and the border. */
+  border-bottom: 3px solid #ffc107; /* This creates the border. Replace black with whatever color you want. */
+}
+.heads::before {
+  content: ""; /* This is necessary for the pseudo element to work. */
+  display: block; /* This will put the pseudo element on its own line. */
+  margin: 0 auto; /* This will center the border. */
+  width: 3rem; /* Change this to whatever width you want. */
+  margin-bottom: 0.5rem;
+  border-bottom: 3px solid #ffc107; /* This creates the border. Replace black with whatever color you want. */
+}
+.who::before {
+  content: ""; /* This is necessary for the pseudo element to work. */
+  display: block; /* This will put the pseudo element on its own line. */
+  margin: 0; /* This will center the border. */
+  width: 2.5rem; /* Change this to whatever width you want. */
+  padding-bottom: 5px; /* This creates some space between the element and the border. */
+  border-bottom: 3px solid #ffc107; /* This creates the border. Replace black with whatever color you want. */
+}
+
+/* css to make image of size 482x641 responsive */
+.too-big img {
+  max-width: calc(100% - 20px);
+  height: calc(100% - 90px);
+}
+
+/* css code to make an image round */
+.round-img {
+  width: 200px;
+  border-radius: 50%;
+  height: auto;
+}
+
+
+/* not working animations */
+.clock::before {
+  content: "";
+  position: absolute;
+  inset: 20px;
+  border: 6px solid white;
+  border-top-color: #a900da;
+  border-bottom-color: #c251e2;
+  border-radius: 50%;
+  z-index: -1;
+  -webkit-animation: spin 3s linear infinite;
+  animation: spin 3s linear infinite;
+}
+
