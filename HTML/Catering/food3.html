@@ -1,0 +1,129 @@
+<!-- html -->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Eventify</title>
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/fav/favicon-16x16.png">
+    <link rel="manifest" href="/fav/site.webmanifest">
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <!-- My css -->
+    <link rel="stylesheet" href="/CSS/index.css">
+    <!-- boxicons css -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/643261c531ebfa0fe7f74794/1gticrrm6';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md bg-body-tertiary sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center column-gap-2" href="#">
+                <img src="/img/circle.png" alt="" style="border-radius: 90px;" width="50"
+                    class="d-inline-block align-text-top">
+                <span class="lead fw-bold">Eventify</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Tlling bs to push to end till medium screen size -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item lead">
+                        <a class="nav-link" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item lead fw-bold">
+                        <a class="nav-link active link-underline-dark" aria-current="page"
+                            href="../services.html">Services</a>
+                    </li>
+                    <li class="nav-item lead">
+                        <a class="nav-link" href="../support.html">Support</a>
+                    </li>
+                    <li class="nav-item lead">
+                        <a class="nav-link" href="../cart.html">Cart</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- over here -->
+    <div class="container">
+        <div>
+            <h1 class="pt-4" id="name">Savory Solutions Catering</h1>
+            <div><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bx-star"></i><i
+                    class="bx bx-star"></i><i class="bx bx-star"></i><button
+                    class="ms-2 rounded text-bg-dark">2/5</button></div>
+            <button class="btn btn-primary mt-2">Contact Us</button>
+        </div>
+        <div class="about-us pt-3">
+            <h2>About Us</h2>
+            Savory Solutions Catering is dedicated to providing exceptional service and delicious cuisine for all types
+            of events. They offer a variety of menu options, including vegetarian and gluten-free, and use only the
+            freshest ingredients.
+        </div>
+        <div class="service pt-3">
+            <h2>Services we provide</h2>
+            <ul>
+                <li><button class="btn btn-danger m-2" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                        onclick="saveItem()">Street food style catering (per person) - INR 400</button></li>
+                <li><button class="btn btn-danger m-2" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                        onclick="saveItem()">Fusion cuisine plated dinner catering (per person) - INR 3,500</button>
+                </li>
+                <li><button class="btn btn-danger m-2" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                        onclick="saveItem()">Customized dessert buffet catering (per person) - INR 1,200</button></li>
+            </ul>
+        </div>
+        <div class="row">
+            <button class="btn btn-dark text-center disabled mb-4">Click The Required service to make bookings</button>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Notification</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Added To Cart
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+    <!-- My Js -->
+    <script src="/Js/index.js"></script>
+</body>
+
+</html>
