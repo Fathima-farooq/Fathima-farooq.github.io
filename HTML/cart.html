@@ -37,7 +37,7 @@
     </style>
 </head>
 
-<body onload="">
+<body onload="update_badge()">
     <!-- navbar section -->
     <nav class="navbar navbar-expand-md bg-body-tertiary sticky-top">
         <div class="container-fluid">
@@ -56,8 +56,8 @@
                     <!-- <li class="nav-item lead">
                         <a class="nav-link" aria-current="page" href="cart"><i class='bx bx-cart'></i>My Cart</a>
                     </li> -->
-                    <li class="nav-item lead fw-bold">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <li class="nav-item lead">
+                        <a class="nav-link" aria-current="page" href="/index.html">Home</a>
                     </li>
                     <li class="nav-item lead">
                         <a class="nav-link" href="/HTML/services.html">Services</a>
@@ -65,9 +65,13 @@
                     <li class="nav-item lead">
                         <a class="nav-link" href="/HTML/support.html">Support</a>
                     </li>
-                    <li class="nav-item lead">
-                        <a class="nav-link" href="/HTML/cart.html">Cart</a>
+                    <li class="nav-item lead fw-bold">
+                        <a class="nav-link active" href="#">
+                            <span id="cart-text">Cart <span class="badge bg-dark rounded-pill ms-1"
+                                    id="my-span">0</span></span>
+                        </a>
                     </li>
+
                 </ul>
             </div>
         </div>
@@ -81,8 +85,6 @@
         <a class="btn btn-primary m-4" href="services.html">Add More Services</a>
     </div>
 
-
-
     <!-- Bootstrap javascript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
@@ -90,8 +92,9 @@
     <!-- My javascript -->
     <script src="/Js/index.js"></script>
     <script>
+        ////////////////////////////////////dynamically generate content
         // Get existing selected items from local storage (or an empty array if none exist)
-        const selectedItems = JSON.parse(localStorage.getItem('selectedItems')) || [];
+        let selectedItems = JSON.parse(localStorage.getItem('selectedItems')) || [];
 
         // Get the container element to display the cart items
         const cartItemsContainer = document.getElementById('cart-items');
@@ -127,6 +130,7 @@
             cartItemsContainer.appendChild(cardDiv);
         });
 
+        /////////////////////////////////////Clear cart button
         // Get the clear button element
         const clearButton = document.getElementById('clear-button');
 
@@ -139,6 +143,7 @@
             // Clear the selected items from local storage
             localStorage.removeItem('selectedItems');
         });
+
     </script>
 </body>
 

@@ -25,7 +25,7 @@ function saveItem() {
     const cateringStyle = button.textContent.split(' - ')[0];
 
     // Get the price from the button and convert it to a number
-    let price = Number(button.textContent.split(' - INR ')[1].replace(/,/g, '')) + 1;
+    let price = Number(button.textContent.split(' - INR ')[1].replace(/,/g, ''));
 
 
     // Get existing selected items from local storage (or an empty array if none exist)
@@ -64,3 +64,13 @@ function lol() {
 function clear() {
     localStorage.clear();
 }
+
+///////////////////////////////////Badge
+// JavaScript code to select the span element and update its text
+const mySpan = document.getElementById('my-span');
+let numItems = 0;
+setInterval(() => {
+    let si = JSON.parse(localStorage.getItem('selectedItems')) || [];
+    numItems = si.length;
+    mySpan.textContent = numItems.toString();
+}, 200);
